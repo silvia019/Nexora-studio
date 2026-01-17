@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* HERO */
+.hero {
+ background-color: #D1D9EC;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #9F57E7, #D37DEC);
+  width: 100%;
+  height: auto;
+  padding: auto;
+  position: fixed;
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 10%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+.hero-content {
+    width: 50%;
+    height: 40vh;
+    padding: auto;
+    text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 8vh;
+  padding: auto;
+}
+
+.hero-content p {
+  margin-bottom: 2rem;
+}
+
+.inicio img{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    margin-top: 1%;
+}
+/* BOTONES */
+.btn-primary {
+  background-color: #2AC7EA;
+  color: #192C6E;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 5vh;
+}
+
+/*Nosotros seccion*/
+#nosotros{
+  background-color: #D37DEC;
+  padding: 2%;
+}
+
+.nosotros h2{
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: #9F57E7;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+
+.services {
+  background-color: #D37DEC;
+  color: #fff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background-color: #9F57E7;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+/* PROCESO */
+.process {
+  background-color: #2AC7EA;
+  color: #192C6E;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: #D1D9EC;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* CONTACTO */
+.contact {
+  background-color: #192C6E;
+  color: #D1D9EC;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #192C6E;
+  color: #D1D9EC;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
