@@ -77,7 +77,6 @@
   background: #f5efe6; /* beige clarito */
 }
 
-/* imagen grande */
 .about-img {
   height: 480px;
   object-fit: cover;
@@ -95,32 +94,6 @@
 .carousel-fade .carousel-item.active {
   opacity: 1;
   transform: scale(1);
-}
-
-/* mover flechas fuera de la imagen */
-.carousel-control-prev {
-  left: -70px;
-}
-
-.carousel-control-next {
-  right: -70px;
-}
-
-/* estilo elegante de flechas */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(0);
-  background-color: rgba(0,0,0,0.1);
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  background-size: 50%;
-}
-
-/* efecto hover pro */
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.25);
 }
 
 
