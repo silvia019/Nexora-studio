@@ -77,21 +77,51 @@
   </div>
 </section>
 
+
+
 <!-- SOBRE NOSOTROS -->
-<section id="about" class="py-5 bg-light">
+<section id="about" class="py-5 about-section">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
+    <div class="row align-items-center">
+      
+      <div class="col-lg-6 mb-4 mb-lg-0">
         <h2 class="fw-bold mb-3">¿Quiénes somos?</h2>
         <p>
           Somos una agencia de soluciones digitales enfocada en combinar creatividad,
           tecnología y estrategia para desarrollar proyectos funcionales y atractivos.
         </p>
       </div>
+
+      <div class="col-lg-6">
+        <div id="aboutCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/espacio.png" class="d-block w-100 about-img" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="image/trabajadores.png" class="d-block w-100 about-img" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="image/empresa.png" class="d-block w-100 about-img" alt="Imagen 3">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+
+<!-- SERVICIOS -->
 <section id="services" class="py-5 services-section">
   <div class="container">
     <h2 class="text-center fw-bold text-white mb-5">Nuestros servicios</h2>
@@ -139,6 +169,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-- PROCESO -->
 <section id="process" class="py-5 bg-info-subtle">
