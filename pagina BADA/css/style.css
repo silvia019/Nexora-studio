@@ -1,160 +1,103 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+/* COLORES BASE */
+:root {
+  --azul: #192C6E;
+  --lila: #9F57E7;
+  --rosa: #D37DEC;
+  --cyan: #2AC7EA;
+  --gris: #D1D9EC;
 }
 
-/* HERO */
-.hero {
- background-color: #D1D9EC;
-  min-height: 100vh;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #9F57E7, #D37DEC);
-  width: 100%;
-  height: auto;
-  padding: auto;
-  position: fixed;
-}
-
-.logo {
-  width: 100px;
-  height: 70px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin-right: 10%;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
+/* NAVBAR */
+/* Estilo base para los links del menú */
+.navbar-nav .nav-link {
+  color: white !important; /* Texto blanco por defecto */
+  transition: color 0.3s ease; /* Transición suave */
   font-weight: 500;
-  font-style: oblique;
-  font-weight: bold;
 }
 
-.inicio{
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: auto;
-}
-.hero-content {
-    width: 50%;
-    height: 40vh;
-    padding: auto;
-    text-align: center;
+/* Efecto cuando pasas el cursor (Azul clarito) */
+.navbar-nav .nav-link:hover {
+  color: var(--cyan) !important;
 }
 
-.hero-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 8vh;
-  padding: auto;
+/* Ajuste opcional para el logo */
+.navbar-brand img {
+  max-width: 150px; /* Ajusta según el ancho de tu logo */
+  object-fit: contain;
 }
 
-.hero-content p {
-  margin-bottom: 2rem;
+/* cabeza */
+.cabeza {
+ background: linear-gradient(135deg, var(--azul) 0%, var(--lila) 50%, var(--rosa) 100%);
+  position: relative;
+  overflow: hidden;
+  color: #D1D9EC;
 }
 
-.inicio img{
-    width: 40%;
-    height: 40%;
-    margin: auto;
-    margin-top: 1%;
-}
-/* BOTONES */
+/* Estilo extra para el botón para que combine con el Cyan */
 .btn-primary {
-  background-color: #2AC7EA;
-  color: #192C6E;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
+  background-color: var(--cyan);
+  border-color: var(--cyan);
+  color: #192C6E; /* Texto oscuro para contraste */
   font-weight: bold;
-  font-size: 5vh;
+  font-size: 3vh;
 }
 
-/*Nosotros seccion*/
-#nosotros{
-  background-color: #D37DEC;
-  padding: 2%;
+.btn-primary:hover {
+  background-color: #24b0d0;
+  border-color: #24b0d0;
+  font-size: 3.5vh;
 }
 
-.nosotros h2{
-  font-size: 2.5vh;
-  text-align: center;
+.seccion-parallax {
+  /* Ruta de tu imagen */
+  background-image: url('image/fondo-estatico.jpg');
+
+  /* EL TRUCO: Mantiene la imagen fija mientras haces scroll */
+  background-attachment: fixed;
+
+  /* Centra y ajusta la imagen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Altura mínima para que se aprecie el efecto */
+  min-height: 100vh;
+  
+  /* Capa oscura opcional para que el texto encima se lea bien */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-secondary {
-  background-color: #9F57E7;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-}
-
-
-.services {
-  background-color: #D37DEC;
-  color: #fff;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+/* SERVICIOS */
+.services-section {
+  background-color: var(--rosa);
 }
 
 .service-card {
-  background-color: #9F57E7;
-  padding: 1.5rem;
+  background-color: var(--lila);
+  color: white;
+  border: none;
   border-radius: 15px;
 }
 
 /* PROCESO */
-.process {
-  background-color: #2AC7EA;
-  color: #192C6E;
-}
-
-.process-steps {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.step {
-  background-color: #D1D9EC;
-  padding: 1rem 1.5rem;
+.process-step {
+  background-color: var(--cyan);
+  padding: 1.5rem;
   border-radius: 20px;
   font-weight: bold;
 }
 
 /* CONTACTO */
-.contact {
-  background-color: #192C6E;
-  color: #D1D9EC;
+.contact-section {
+  background-color: var(--azul);
+  color: var(--gris);
 }
 
 /* FOOTER */
 .footer {
-  background-color: #192C6E;
-  color: #D1D9EC;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  background-color: var(--azul);
+  color: var(--gris);
 }
