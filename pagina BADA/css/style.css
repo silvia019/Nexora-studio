@@ -71,12 +71,31 @@
 }
 
 
-/* SERVICIOS – ESTILO GLASS */
+/* SERVICIOS */
 .services-section {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background-image: url("image/fondo.png"); /* tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5rem 0;
+  position: relative;
 }
 
+/* capa oscura para legibilidad */
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.services-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* tarjetas glass */
 .service-card {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(12px);
@@ -107,13 +126,13 @@
 .service-card h5 {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 .service-card p {
   font-size: 0.95rem;
   opacity: 0.85;
 }
+
 
 /* PROCESO */
 .process-step {
