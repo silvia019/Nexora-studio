@@ -73,7 +73,7 @@
 
 /* SERVICIOS */
 .services-section {
-  background-image: url("image/fondo.png"); /* tu imagen */
+  background-image: url("../image/fondo.png"); /* tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
