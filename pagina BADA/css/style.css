@@ -10,21 +10,20 @@
 /* NAVBAR */
 /* Estilo base para los links del menú */
 .navbar-nav .nav-link {
-  color: white !important; /* Texto blanco por defecto */
-  transition: color 0.3s ease; /* Transición suave */
+  color: white !important;
+  transition: color 0.3s ease;
   font-weight: 500;
 }
 
-/* Efecto cuando pasas el cursor (Azul clarito) */
-.navbar-nav .nav-link:hover {
-  color: var(--cyan) !important;
+/* NAVBAR GLASS */
+.navbar {
+  background: rgba(25, 44, 110, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Ajuste opcional para el logo */
-.navbar-brand img {
-  max-width: 150px; /* Ajusta según el ancho de tu logo */
-  object-fit: contain;
-}
+
 
 /* cabeza */
 .cabeza {
