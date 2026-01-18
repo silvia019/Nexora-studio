@@ -15,9 +15,20 @@
   font-weight: 500;
 }
 
+/* Efecto cuando pasas el cursor (Azul clarito) */
+.navbar-nav .nav-link:hover {
+  color: var(--cyan) !important;
+}
+
+/* Ajuste opcional para el logo */
+.navbar-brand img {
+  max-width: 150px;
+  object-fit: contain;
+}
+
 /* NAVBAR GLASS */
 .navbar {
-  background: rgba(25, 44, 110, 0.35);
+  background: rgba(25, 44, 110, 0.35); /* tu azul transparente */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
