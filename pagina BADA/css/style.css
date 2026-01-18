@@ -59,9 +59,11 @@
   font-size: 3.5vh;
 }
 
+
+
 .seccion-parallax {
   /* Ruta de tu imagen */
-  background-image: url('image/fondo-estatico.jpg');
+  background-image: url('../image/imagenfondo.jpg');
 
   /* EL TRUCO: Mantiene la imagen fija mientras haces scroll */
   background-attachment: fixed;
