@@ -34,6 +34,19 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Estilo especial para el link de Login */
+.nav-login {
+  border: 1px solid var(--cyan);
+  border-radius: 20px;
+  padding: 5px 20px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-login:hover {
+  background-color: var(--cyan);
+  color: var(--azul) !important; /* El texto cambia a azul oscuro para contrastar */
+  transform: scale(1.05);
+}
 
 
 /* cabeza */
@@ -174,21 +187,96 @@
 
 
 /* PROCESO */
-.process-step {
-  background-color: var(--cyan);
-  padding: 1.5rem;
-  border-radius: 20px;
+.flip-card {
+  background-color: none;
+  height: 200px; /* Ajusta la altura a tu gusto */
+  perspective: 1000px; /* Crea el efecto de profundidad 3D */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* El giro al pasar el cursor */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Oculta la cara trasera al estar de frente */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo Cara Frontal (Azul con borde Cyan) */
+.flip-card-front {
+  background-color: var(--azul);
+  color: white;
+  border-bottom: 4px solid var(--cyan);
+}
+
+.step-number {
+  font-size: 2rem;
   font-weight: bold;
+  color: var(--cyan);
+  opacity: 0.5;
 }
 
-/* CONTACTO */
+/* Estilo Cara Trasera (Degradado Lila/Rosa) */
+.flip-card-back {
+  background: linear-gradient(135deg, var(--lila), var(--rosa));
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 0.9rem;
+}
+
+/*contato y pie de pagina*/
 .contact-section {
-  background-color: var(--azul);
-  color: var(--gris);
+  /* Fondo con degradado sutil usando tu azul y lila */
+  background: linear-gradient(135deg, var(--azul) 0%, #253b8c 100%);
+  color: white;
 }
 
-/* FOOTER */
+.calendar-placeholder {
+  border-left: 5px solid var(--cyan);
+}
+
+.btn-custom {
+  background-color: var(--lila);
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: var(--rosa);
+  color: white;
+  transform: translateY(-3px);
+}
+
 .footer {
-  background-color: var(--azul);
-  color: var(--gris);
+  background-color: #111e4a; /* Un tono más oscuro que tu azul para el cierre */
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.form-control:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 0.25rem rgba(42, 199, 234, 0.25);
 }
